@@ -1,0 +1,7 @@
+{
+  "name": "ebac-ws",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
