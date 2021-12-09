@@ -1,10 +1,10 @@
 module.exports = {
-    name:'catalogo-service',
+    name:'catalogo',
     version: 1,
 
     actions:{
         teste(ctx){
-            console.log("teste")
+            console.log("teste2")
         }
     }
 }
