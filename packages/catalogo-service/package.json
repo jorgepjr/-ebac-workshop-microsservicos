@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "license": "MIT",
     "scripts": {
-        "start": "node src/index.js"
+        "start": "nodemon src/index.js"
     },
     "dependencies": {
         "moleculer": "^0.14.18",
@@ -11,6 +11,7 @@
         "mongoose": "^6.1.0"
     },
     "devDependencies": {
-        "dotenv": "^10.0.0"
+        "dotenv": "^10.0.0",
+        "nodemon": "^2.0.15"
     }
 }
