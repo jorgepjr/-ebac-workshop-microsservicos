@@ -9,7 +9,7 @@ const {ServiceBroker} = require('moleculer');
       transporter:'TCP'
   });
 
-  broker.loadServices('../src/services');
+  broker.loadServices('./src/services');
 
   broker.start().then(() =>{
       broker.repl();
