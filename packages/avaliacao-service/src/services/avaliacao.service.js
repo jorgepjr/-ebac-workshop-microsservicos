@@ -13,7 +13,7 @@ module.exports = {
             const filmeId = ctx.params.filmeId
             const valor = ctx.params.valor;
 
-            const existe = await ctx.call("v1.catalogo-service.exists", {
+            const existe = await ctx.call("v1.catalogo-service.buscar", {
                 id: filmeId
             });
 
