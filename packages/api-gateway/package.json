@@ -1,0 +1,17 @@
+{
+  "name": "api-gateway",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "moleculer": "^0.14.18",
+    "moleculer-repl": "^0.6.6",
+    "moleculer-web": "^0.10.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
