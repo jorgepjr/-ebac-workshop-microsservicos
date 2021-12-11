@@ -10,7 +10,8 @@ module.exports = {
             if(ctx.params){
                 return Cliente.create({
                     nome: ctx.params.nome,
-                    cpf: ctx.params.cpf
+                    cpf: ctx.params.cpf,
+                    registro: Date.now()
                 })
             }
             return false

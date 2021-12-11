@@ -17,15 +17,15 @@ module.exports = {
             return false;
         },
 
-        async atualiza(ctx) {
-            let filme = await Filme.exists({
-                _id: ctx.params.id
+        async atualizar(ctx) {
+            let filme = await Filme.findById({
+                _id:ctx.params.id
             });
 
             if (filme) {
-                return await Filme.updateOne({
-                    nome: filme.nome,
-                    sinopse: filme.sinopse
+                return await filme.updateOne({
+                    nome:ctx.params.nome ,
+                    sinopse: ctx.params.sinopse
                 })
             }
         },
