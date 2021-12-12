@@ -22,4 +22,4 @@ jobs:
       - name: Build
         run: |-
           cd ./packages/${{env.PACKAGE}}
-          docker build --tag "{{env.PACKAGE}}:${{env.VERSION}}" .
+          docker build --tag "${{env.PACKAGE}}:${{env.VERSION}}" .
