@@ -16,6 +16,10 @@ jobs:
       - name: Set Package Name
         run: echo 'PACKAGE='$(echo $GITHUB_REF_NAME) | cut -d "@" -f 1) >> $GITHUB_ENV
 
+      - name: Set Package Version
+        run: echo 'PACKAGE='$(echo $GITHUB_REF_NAME) | cut -d "@" -f 2) >> $GITHUB_ENV
+
       - name: Build
-        run: cd ./packages/${{env.PACKAGE}}
+        run: |-
+          cd ./packages/${{env.PACKAGE}}
           docker build --tag "{{env.PACKAGE}}:${{env.VERSION}}" .
